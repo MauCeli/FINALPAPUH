@@ -26,8 +26,12 @@ public class Mover : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        transform.Translate(Input.GetAxis("Horizontal") * velx * Time.deltaTime, 0, 0);
+    {   
+      
+       
+            transform.Translate(Input.GetAxis("Horizontal") * velx * Time.deltaTime, 0, 0);
+ 
+        
 
         if (Input.GetKey(KeyCode.Space))
         {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoverPlataforma : MonoBehaviour
 {
-    public float velz = 10f;
+    public float velz = 300f;
     void Start()
     {
 

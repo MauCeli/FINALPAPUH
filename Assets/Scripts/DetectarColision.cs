@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DetectarColision : MonoBehaviour
 {
     int cantidadVida = 3;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,9 +20,15 @@ public class DetectarColision : MonoBehaviour
             cantidadVida--;
             if (cantidadVida == 0)
             {
+                finJuego();
                 Destroy(gameObject);
             }
 
         }
+    }
+
+    public void finJuego()
+    {
+        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
     }
 }
